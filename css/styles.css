@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
 
 :root {
-  --dark-blue: #4834d4;
-  --light-blue: #686de0;
-  --dark-pink: #eb4d4b;
-  --light-pink: #ff7979;
+  --dark-blue: #283149;
+  --light-blue: #404b69;
+  --dark-pink: #f73859;
+  --light-pink: #fc4c69;
 }
 
 html {
@@ -93,10 +93,11 @@ section {
   margin: 0;
   font-weight: 900;
   border-bottom: 1px solid var(--light-blue);
+  color: var(--dark-blue);
 }
 
 .title span {
-  color: var(--dark-blue);
+  color: var(--dark-pink);
   font-weight: 700;
 }
 
@@ -153,7 +154,7 @@ section {
 }
 
 .category-item:hover a {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-pink);
   color: white;
   border-bottom-right-radius: 1.5rem;
 }
