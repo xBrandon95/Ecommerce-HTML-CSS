@@ -217,6 +217,7 @@ section {
   text-align: center;
   font-size: 2rem;
   transition: 0.2s ease-in;
+  color: var(--dark-blue);
 }
 
 .category-item:hover a {
@@ -291,6 +292,7 @@ section {
 /* Products Section */
 .products-section {
   margin-top: 4rem;
+  padding: 0 1.5rem;
 }
 
 .product-item {
@@ -344,12 +346,18 @@ section {
 /* products config images */
 .product-item:nth-child(1) img {
   width: 100%;
-  height: 43rem;
+  height: 25rem;
   object-fit: cover;
+}
+
+@media (min-width: 765px) {
+  .product-item:nth-child(1) img {
+    height: 35rem;
+  }
 }
 .product-item:nth-child(2) img,
 .product-item:nth-child(3) img {
-  height: 30rem;
+  height: 25rem;
   width: 100%;
   object-fit: cover;
 }
@@ -512,7 +520,13 @@ section {
 
 .blog-image img {
   width: 100%;
-  border-radius: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .blog-image img {
+    width: 100%;
+    border-radius: 1.6rem;
+  }
 }
 
 .blog-info {
@@ -613,18 +627,26 @@ section {
 
 .form-group {
   display: flex;
-  margin: 1rem;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
 }
 
 @media (min-width: 768px) {
   .form-group {
     display: flex;
+    flex-direction: row;
     margin: 2rem;
   }
 }
 
 .form-group label {
-  flex-basis: 10rem;
+  flex-basis: 5rem;
+}
+
+@media (min-width: 768px) {
+  .form-group label {
+    flex-basis: 10rem;
+  }
 }
 
 .form-group input:not([type='radio']),
